@@ -5,8 +5,12 @@ dotenv.config();
 
 const PORT = process.env.PORT;
 
-app.get('/',(req,res) => {
-    res.send('hey');
+app.get('/api',(req,res) => {
+    res.json({
+        id:1,
+        name:'Tua',
+        link:'haha'
+    });
 });
 
 app.listen(PORT, () => console.log('Server is running'));
