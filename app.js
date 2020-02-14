@@ -13,7 +13,7 @@ app.get('/view',(req,res) => {
     res.send(myData);
 });
 
-app.get('/new/:name/:link',(req,res) => {
+app.post('/new/:name/:link',(req,res) => {
     var id=parseInt(Object.keys(myData["data"]).length) + 1;
     var data=req.params;
     var name=data.name;
