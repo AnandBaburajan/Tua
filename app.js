@@ -13,13 +13,12 @@ app.get('/view',(req,res) => {
     res.send(myData);
 });
 
-app.post('/new/:name/:link',(req,res) => {
-    var id=parseInt(Object.keys(myData).length) + 1;
+app.get('/new/:name/:link',(req,res) => {
+    var id=parseInt(Object.keys(myData["data"]).length) + 1;
     var data=req.params;
     var name=data.name;
     var link=data.link;
-
-    myData[id]={name: name, link: link};
+    myData["data"].push({id: id, name: name, link: link});
     var newData = JSON.stringify(myData);
     fs.writeFile('data.json', newData, function(err){if(err) throw err;})
     res.json({success:'true'})
