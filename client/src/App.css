@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 2em;
 }
 
  /* Phone */
@@ -28,11 +29,12 @@
   .list {
     margin:auto;
     width:90%;
-    padding-top: 3em;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0;
   }
 
   .tua {
