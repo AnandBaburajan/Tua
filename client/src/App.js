@@ -7,11 +7,30 @@ function App() {
   fetch('/view')
     .then(res => res.json())
     .then(data => setData(data));
-    var naam = data["data"]==null? "" : data["data"][0]["name"];
+    var link = data["data"]==null? "" : data["data"][3]["link"];
+    var name = data["data"]==null? "" : data["data"][3]["name"];
   return (
     <div className="App">
-      <div>
-          {naam}
+      <div className="tuanav">
+        <h3 className="tua">Tua</h3>
+      </div>
+      <div className="list">
+        <div>
+          <h4 className="name">{name}</h4>
+          <iframe className="playlist" title="playlist" src={"https://open.spotify.com/embed/playlist/" + link} height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div>
+          <h4 className="name">{name}</h4>
+          <iframe className="playlist" title="playlist" src={"https://open.spotify.com/embed/playlist/" + link} height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div>
+          <h4 className="name">{name}</h4>
+          <iframe className="playlist" title="playlist" src={"https://open.spotify.com/embed/playlist/" + link} height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div>
+          <h4 className="name">{name}</h4>
+          <iframe className="playlist" title="playlist" src={"https://open.spotify.com/embed/playlist/" + link} height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
       </div>
     </div>
   );
