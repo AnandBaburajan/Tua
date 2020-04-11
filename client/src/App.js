@@ -17,7 +17,7 @@ function App() {
       items.push(
         <div className="item">
         <h4 className="name">{name}</h4>
-        <iframe className="playlist" title="playlist" src={"https://open.spotify.com/embed/playlist/" + link} height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe className="playlist" title="playlist" src={"https://open.spotify.com/embed/playlist/" + link} height="280" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       )
     }
@@ -27,8 +27,10 @@ function App() {
     <div className="App">
       <div className="tuanav">
         <h3 className="tua">Tua</h3>
+        <NewPlaylist/>
       </div>
-      <NewPlaylist/>
+      
+      <h1 className="friends">What your friends are listening to</h1>
       <div className="list">
           {items}
       </div>

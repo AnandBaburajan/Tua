@@ -1,29 +1,44 @@
-.tua {
-  margin:auto;
-  width:95%;
-  color:rgb(221, 221, 221);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 .tuanav {
   padding-top:1em;
   background-color:#000;
-  height:3.5em;
-  line-height: 3.5em;
+  margin:auto;
+  color:rgb(221, 221, 221);
+  padding-left:2.4em;
+  padding-right:0.4em;
+  overflow: hidden;
+}
+
+.tua {
+  display: inline-block;
+  padding-top:0.5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .newForm {
-  padding-top:2em;
-  margin:auto;
-  width:95%;
+  float:right;
+}
+
+.friends {
+  padding-top: 1em;
+  padding-left:1.2em;
+  color:#fff;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
 .name {
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
   color:rgb(221, 221, 221);
 }
 
 .list {
   margin:auto;
-  width:95%;
+  padding-left:2.4em;
+  padding-right:2.4em;
   padding-top: 2em;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -38,7 +53,8 @@
 
 .ui.label {
   background-color: #262626 !important;
-  color: #fff !important;
+  color: #BEBDBD !important;
+  font-weight: 300 !important;
 }
 
 .App {
@@ -46,5 +62,5 @@
 }
 
 .item {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
