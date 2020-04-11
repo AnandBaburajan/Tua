@@ -9,6 +9,10 @@ const PORT = process.env.PORT;
 var myRawData = fs.readFileSync('data.json');
 var myData = JSON.parse(myRawData);
 
+app.get('/',(req,res) => {
+    res.send("Hello!");
+});
+
 app.get('/view',(req,res) => {
     res.send(myData);
 });
