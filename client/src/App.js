@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import NewPlaylist from './NewPlaylist';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <div className="tuanav">
         <h3 className="tua">Tua</h3>
       </div>
+      <NewPlaylist/>
       <div className="list">
           {items}
       </div>

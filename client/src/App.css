@@ -5,9 +5,16 @@
 }
 
 .tuanav {
-  background-color: #333237;
-  height:3em;
-  line-height: 3em;
+  padding-top:1em;
+  background-color:#000;
+  height:3.5em;
+  line-height: 3.5em;
+}
+
+.newForm {
+  padding-top:2em;
+  margin:auto;
+  width:95%;
 }
 
 .name {
@@ -22,6 +29,20 @@
   grid-template-columns: auto auto auto auto;
   justify-content: space-between;
   padding-bottom: 0;
+}
+
+.ui.input input {
+  background-color: #575757 !important;
+  color: #fff !important;
+}
+
+.ui.label {
+  background-color: #262626 !important;
+  color: #fff !important;
+}
+
+.App {
+  background-color: #121212;
 }
 
 .item {
